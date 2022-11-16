@@ -1,0 +1,382 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+:root{
+    --tipo-letra: "Nunito", Helvetica, arial, sans-sarif;
+    --roxo:  #5d0872;
+    --laranja: #f0be10;
+    --vermelho: #ff0000;
+    --branco: #ffff;
+    --preto: #0000;
+}
+
+body{
+    background-color: var(--branco);
+    font-family: var(--tipo-letra);
+}
+a{
+        text-decoration: none;
+}
+ul{
+        list-style: none;
+ }
+.menu-bg{
+    background-color: rebeccapurple;
+}
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.menu-logo{
+    margin: 10px;
+}
+.nav-lista{
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+}
+.nav-link{
+    padding: 20px 10px;
+    color: white;
+}
+.mobile-menu-icon{
+    display: none;
+}
+.mobile-menu{
+    display: none;
+}
+
+
+ul{
+    list-style: none;
+
+}
+.li-link{
+    padding: 20px 10px;
+}
+.titulo{
+    font-weight: bold;
+    font-size: 3rem;
+    margin: 0px auto;
+    text-align: center;
+    padding: 25px 0px;
+}
+hr{
+    border: none;
+    height: 3px;
+    width: 200px;
+    margin: 20px auto;
+    background-color: var(--vermelho);
+
+}
+p{
+    line-height: 21.25px;
+    padding: 0px 10px;
+}
+.titulo2{
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 3rem;
+
+}
+.quemsomos{
+    margin: 0px auto;
+    width: 960px;
+ 
+}
+.div-conteiner-quemsomos{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    
+    
+}
+.div-quemsomos{
+    flex: 6 1 160px;
+    
+}
+.div-img{
+    flex: 1 1 350px;
+}
+img{
+    max-width: 100%;
+    display: block;
+}
+.div-conteiner-nossoscursos{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+
+}
+.div-nossoscursos{
+    width: 280px;
+    margin:  0px 20px;
+}
+.titulo3{
+   font-size: 1.5rem;
+    margin: 10px 0px 5px 0px;
+    text-align: center;
+
+}
+.div-conteiner-planos{
+    max-width: 960px;
+    margin: 0px auto;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+.planos{
+    background-color: var(--vermelho);
+}
+.div-planos{
+    width: 290px;
+    margin: 10px;
+    border: 2px solid var(--laranja);
+}
+.titulo4{
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 10px auto;
+}
+.span-preco{
+    font-size: 3rem;
+    text-align: center;
+    font-weight: bold;
+}
+sup{
+    font-size: 1.5rem;
+    top: -20px;
+}
+.tracolaranja{
+    background-color: var(--roxo);
+    border: none;
+    width: 200px;
+    margin: 5px auto;
+}
+.ul-lista{
+    max-width: 195px;
+    margin: 0px auto;
+
+}
+.lista{
+    margin: 10px 0;
+    font-family: italic;
+}
+.lista::before{
+    content: "";
+    display: flex;
+    width: 5px;
+    height: 5px;
+    background-color: var(--laranja);
+    border-radius: 5px;
+    margin-left: -15px;
+}
+.btn-comprar{
+    display: block;
+    max-width: 180px;
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 15px auto;
+    padding: 10px;
+    text-align: center;
+    border: 2px solid var(--laranja);
+}
+.div-planos:last-child{
+    background-color: var(--laranja);
+}
+.vantagens{
+    max-width: 960px;
+    margin: 0px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.div-vantagens{
+    max-width: 240px;
+    margin: 10px;
+}
+.titulo5{
+    font-size: 1.7rem;
+    margin-bottom: 5px;
+    margin-left: 10px;
+}
+.titulo5::before{
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 25px;
+    margin-right: 5px;
+}
+.div-vantagens:nth-of-type(3n+1) .titulo5::before{
+    background-color:var(--vermelho);
+}
+.div-vantagens:nth-of-type(3n+2) .titulo5::before{
+    background-color: var(--roxo);
+}
+.div-vantagens:nth-of-type(3n+3) .titulo5::before{
+    background-color: var(--laranja);
+}
+.assine{
+    background-color: var(--roxo);
+}
+.div-assine-conteiner{
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 50px 0px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.div-assine-info{
+    padding-left: 10px;
+    flex: 1 1 260px;
+    flex-wrap: wrap;
+    display: flex;
+}
+.formulario{
+    flex: 2 1 260px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.titulo6{
+    font-size: 2.62rem;
+    font-weight: bold;
+    color: var(--branco);
+}
+.p-assine{
+    font-style: italic;
+    color: var(--branco);
+}
+.in-email{
+    flex: 3 1 260px;
+    font-size: 1.5rem;
+    width: 325px;
+    color: block;
+    font-style: italic;
+    font-family: var(--tipo-letra);
+    border: 10px solid var(--laranja);
+    padding: 10px;
+    margin: 0px;
+    border-radius: 0px;
+}
+.btn{
+    width: 192px;
+    font-family: var(--tipo-letra);
+    background-color: var(--laranja);
+    font-size: 2.25rem;
+    font-weight: bold;
+    color: black;
+    cursor: pointer;
+    border: none;
+    padding: 15px;
+
+}
+.footer{
+    background-color: var(--vermelho);
+    display: flex;
+    justify-content: space-around;
+    padding: 55px calc( (100% - 960px)/2);
+}
+
+.copright, .footerlogo{
+    padding-left: 10px;
+    padding-right: 10px;
+    color: var(--branco);
+
+}
+.menu{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 6rem;
+}
+.menu-logo{
+    display: flex;
+    align-items: center;
+}
+.menu-logo h1{
+    color: #ffff;
+}
+.nav{
+    display: flex;
+    align-items: center;
+}
+.nav, .nav-lista{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+.li-lista{
+    margin: 0 15px;
+}
+.nav-link{
+    text-decoration: none;
+    font-size: 1.15rem;
+    color: #ffff;
+    font-weight: 400px;
+
+}
+
+@media screen and (max-width: 730px) {
+    .nav-bar{
+        padding: 1.5rem 4rem;
+    }
+    .nav-lista{
+        display: none;
+    }
+    .login-button{
+        display: none;
+    }
+    
+    .mobile-menu-icon{
+        display: block;
+    }
+    .mobile-menu-icon button{
+        background-color: transparent;
+        cursor: pointer;
+        border: none;
+    }
+    .mobile-menu ul{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+    .mobile-menu, .nav-link {
+        display: block;
+        padding-top: 1.2rem;
+    }
+    .mobile-menu, .login-button {
+        display: block;
+        padding: 1rem 2rem;
+    }
+    .mobile-menu, .login-button button {
+        width: 100%;
+    }
+    .open{
+        display: block;
+    }
+    .titulo{
+        display: none;
+    }
+    .titulo2{
+        display: block; 
+    }
+    #quemsomos{
+        width: 480px;
+        text-align: justify;
+    }
+    .footer{
+        display: flex;
+        font-size: 0.7rem;
+        flex-wrap: wrap;
+    }
+    .in-email {
+        max-width: 250px;
+    }
+    
+    }
